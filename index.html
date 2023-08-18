@@ -3,26 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Toy store</title>
 
 </head>
-<body>
+<body onload="load()">
     <!-- //element name and price -->
 <div class="mainBox">
-    <ol>
-        <li>Just Add New Fun Toys</li>
-        <li>Remove Toys</li>
-        <li>Search Toys</li>
-        <li>Increase price 10%</li>
-        <li>View Toys within Price Range</li>
+    
+        <input type = "radio" name ="option" onclick="addToys()">Just Add New Fun Toys<br>
+        <input type = "radio" name ="option" onclick="removeToys()"> Remove Toys<br>
+        <input type = "radio" name ="option" onclick="searchToy()"> Search Toys<br>
+        <input type = "radio" name ="option" onclick="incresePrice()"> Increase price 10%<br>
+        <input type = "radio" name ="option" onclick="viewToy()">View Toys within Price Range
       
-    </ol>
+    
 </div>
-<div class="choice">
-    <input type="text" id="targetInput" placeholder="Enter your choice" />
-<button onclick="targetSubmitButton()">Submit</button>
-</div>
-<div id="showLisOfToys">
+
+<div id="showLisOfToys"> 
 
 </div>
 
