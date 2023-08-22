@@ -1,6 +1,6 @@
 let toys =["Lago", "Truck",  "Dinosaur", "Doll House", "Babie Dolls",  ]
 let price = [15, 10, 8, 20, 12]
-
+let increasePercent = 0
 function load(){
  printToys()
 }
@@ -34,7 +34,7 @@ break
   }
   printToys()
 }
-
+//below prin toy detail and price
 function printToys(){
   var storeNamePrice = ""
   document.getElementById('showLisOfToys').innerHTML = storeNamePrice
@@ -66,4 +66,16 @@ alert( "$" + price[position])
   }else{
     alert('Can not found')
   }
+}
+function priceChange(num){
+  return num + num * increasePercent/100
+}
+function incresePrice(){
+  //prompt use to get input to the user
+  //parseint convert text to number so it can multiply
+var percent = parseInt(prompt("Enter the percentage value"))
+increasePercent = percent
+var newPrice = price.map(priceChange)
+price = newPrice
+printToys()
 }

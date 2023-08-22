@@ -7,8 +7,9 @@ body{
 }
 .header{
     text-align: center;
-    color: #e9ac59;
+    color: #FFAA47;
     margin-top: 40px;
+    font-size: 25px;
 }
 
 .header img{
@@ -24,13 +25,16 @@ body{
     border-radius: 30px;
     padding: 20px;
     
+    
 }
 .mainBox{
 width: 40%;
 }
 #showLisOfToys{
     width: 40%;
-    line-height: 20px;
+    line-height: 25pt;
+
+  
 }
 .mainBox input{
     margin: 10px 5px 10px 5px;
