@@ -1,6 +1,8 @@
 let toys =["Lago", "Truck",  "Dinosaur", "Doll House", "Babie Dolls",  ]
 let price = [15, 10, 8, 20, 12]
 let increasePercent = 0
+let min = 0
+let max = 0
 function load(){
  printToys()
 }
@@ -79,3 +81,22 @@ var newPrice = price.map(priceChange)
 price = newPrice
 printToys()
 }
+
+function viewToy(){
+  //prompt use to get input to the user
+  //parseint convert text to number so it can multiply
+ min = parseInt(prompt("Enter minimum value"))
+ max = parseInt(prompt("Enter maximum value"))
+ var storeNamePrice = ""
+  document.getElementById('showLisOfToys').innerHTML = storeNamePrice
+for (i=0; i<price.length; i++){
+  if (price[i]>=min && price[i]<=max){
+    storeNamePrice += toys[i]+ "&nbsp; $" + price[i]+ "<br>"
+  }
+}
+document.getElementById('showLisOfToys').innerHTML = storeNamePrice
+}
+
+
+
+
